@@ -1,6 +1,4 @@
-class Solution
-{
-    //Function to return Breadth First Traversal of given graph.
+
     bfsOfGraph(V, adj)
     {
         // code here

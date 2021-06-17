@@ -7,7 +7,7 @@ class Solution
             visited[cur]=true;
             ret.push(cur);
             for(let i=0;i<adj[cur].length;i++){
-               let f= this.dfs(V,adj,visited,adj[cur][i]);
+               let f= dfs(V,adj,visited,adj[cur][i]);
                 ret=ret.concat(f);
             }
             
@@ -22,7 +22,7 @@ class Solution
         // code here
         let visited=Array(V).fill(false);
         let cur=0;
-        return this.dfs(V,adj,visited,cur);
+        return dfs(V,adj,visited,cur);
         
         
     }

@@ -16,7 +16,7 @@
                 ret=1;
                 let f;
                 for(let k=0;k<8; k++){
-                    f=f+this.dfs(grid,visited,i+rn[k],j+cn[k]);
+                    f=f+dfs(grid,visited,i+rn[k],j+cn[k]);
                 }
                
             }
@@ -45,7 +45,7 @@
             
             for(let j=0; j<grid[i].length; j++){
                 if(visited[i][j]===false && grid[i][j]==1){
-                    let ff=this.dfs(grid,visited,i,j);
+                    let ff=dfs(grid,visited,i,j);
                     // console.log(ff);
                     // console.log(visited);
                     if(ff>0)

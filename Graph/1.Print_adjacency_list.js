@@ -1,5 +1,4 @@
-class Solution 
-{
+
     //Function to return the adjacency list for each vertex.
     printGraph(V, adj)
     {
@@ -10,5 +9,5 @@ class Solution
         
         return adj;
     }
-}
+
 
