@@ -1,29 +1,31 @@
-//Function to detect cycle in an undirected graph.
-    dfs(adj,visited,cur,parent){
+dfs(adj,visited,recT,cur){
+       
         visited[cur]=true;
+        recT[cur]=true;
         for(let i=0; i<adj[cur].length; i++){
             let u=adj[cur][i];
             if(visited[u] === false){
-                let inn=this.dfs(adj,visited,u,cur);
+                let inn=dfs(adj,visited,recT,u);
                 if(inn === true){
                     return true;
                 }
                 
-            }else if(u!=parent){
+            }else if(recT[u]===true){
                 return true;
                     
             }
         }
-        
+        recT[cur]=false;
         return false;
     }
-    isCycle(V, adj)
+    isCyclic(V, adj)
     {
         
         let visited=Array(V).fill(false);
+        let recT=Array(V).fill(false);
         for(let i=0; i<V; i++){
             if(visited[i]===false){
-                let f=this.dfs(adj,visited,i,-1);
+                let f=dfs(adj,visited,recT,i);
                 if(f===true)
                     return true;
             }
