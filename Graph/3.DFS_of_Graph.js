@@ -1,7 +1,5 @@
-class Solution 
-{
-    
-    dfs(V,adj,visited,cur){
+  
+    function dfs(V,adj,visited,cur){
         let ret=[];
         if(visited[cur] === false){
             visited[cur]=true;
@@ -17,7 +15,8 @@ class Solution
         return ret;
     }
 
-    dfsOfGraph(V, adj)
+    ////main function
+    function dfsOfGraph(V, adj)
     {
         // code here
         let visited=Array(V).fill(false);
@@ -26,4 +25,4 @@ class Solution
         
         
     }
-}
+

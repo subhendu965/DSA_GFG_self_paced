@@ -1,4 +1,4 @@
-dfs(adj,visited,recT,cur){
+function dfs(adj,visited,recT,cur){
        
         visited[cur]=true;
         recT[cur]=true;
@@ -18,7 +18,9 @@ dfs(adj,visited,recT,cur){
         recT[cur]=false;
         return false;
     }
-    isCyclic(V, adj)
+    
+    /////main function
+    function isCyclic(V, adj)
     {
         
         let visited=Array(V).fill(false);

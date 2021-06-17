@@ -1,5 +1,5 @@
 
-    bfsOfGraph(V, adj)
+    function bfsOfGraph(V, adj)
     {
         // code here
         let q=[];

@@ -7,7 +7,7 @@ A value of cell 3 means Blank cell.
 A value of cell 0 means Wall.
 Note: There are only a single source and a single destination.*/
 
-isSafe(grid,visited,sx,sy){
+function isSafe(grid,visited,sx,sy){
         let rows=grid.length;
         let cols=grid[0].length;
         if(sx<0 || sy<0 || sx>=rows || sy>=cols || visited[sx][sy]==true){
@@ -43,7 +43,9 @@ isSafe(grid,visited,sx,sy){
         return false;
         
     }
-    is_Possible(grid)
+    
+    ///main function
+    function is_Possible(grid)
     {
         // code here
         //findout the source

@@ -1,4 +1,4 @@
- dfs(adj,visited,cur,parent){
+ function dfs(adj,visited,cur,parent){
         visited[cur]=true;
         for(let i=0; i<adj[cur].length; i++){
             let u=adj[cur][i];
@@ -16,7 +16,9 @@
         
         return false;
     }
-    isCycle(V, adj)
+    
+    ///main function
+    function isCycle(V, adj)
     {
         
         let visited=Array(V).fill(false);

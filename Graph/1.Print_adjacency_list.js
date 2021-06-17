@@ -1,6 +1,6 @@
 
     //Function to return the adjacency list for each vertex.
-    printGraph(V, adj)
+    function printGraph(V, adj)
     {
         // code here
         for(let i=0;i<adj.length; i++){

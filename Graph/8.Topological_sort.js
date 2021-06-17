@@ -1,4 +1,4 @@
-topoSort(V, adj)
+function topoSort(V, adj)
     {
         // code here
         // console.log(adj);

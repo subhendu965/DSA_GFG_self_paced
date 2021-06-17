@@ -1,4 +1,4 @@
- dfs(grid,visited,i,j){
+ function dfs(grid,visited,i,j){
         // console.log(i,j);
         let ret=0;
         if(i<0 || j<0 || i>=grid.length || j>=grid[i].length){
@@ -25,8 +25,9 @@
         
         return ret;
     }
-    //Function to find the number of islands.
-    numIslands(grid)
+    
+    //main Function to find the number of islands.
+    function numIslands(grid)
     {
         // code here
         
